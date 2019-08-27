@@ -42,6 +42,7 @@
     "babel-polyfill": "^6.26.0",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1",
+    "typeit": "^6.0.3",
     "wow.js": "^1.2.2"
   }
 }

@@ -86,15 +86,16 @@ img, svg{
 .single-item-rtl{
 	
 	height: 100vh;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 .slider-for__img{
 	text-shadow: 2px 2px 3px #000;	
 	
 	height: 100vh;
-	overflow:hidden;	
+		
 
 	&_1{
+		
 		background-image: url(../img/1.jpg);
 		background-size: cover;	
 		background-position: center;
@@ -134,97 +135,53 @@ img, svg{
 .slick-active .h{
 	padding-top: 80px;
 	text-align: center;
-	font-size:150px;
+	font-size:7vw;
 	color:white;
+	padding-bottom: 80px;
+
 	
 }
 .slick-active .p {
-	width: 300px;
-	margin: 0 auto;
-	padding-top: 150px;
-	position:relative;
 
-	
-}
-.slick-active .p__span{
-
+	text-align: center;
 	min-height:50px;
-	font-size: 30px;
+	font-size: 2.5vw;
 	color:white;
-	
-	
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 1000ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
 }
-.slick-active .ultra{
-	width: 400px;
-	margin: 0  auto;
-	position:relative;
-	padding-top: 50px;
-	text-align: left;
-	padding-left: 50px;
-	
-}
-.slick-active .ultra_span{
 
-	color:black;
-	font-size:24px;
-	min-height:50px;
+.slick-active .ultra{
+	padding-bottom: 20px;
 	
-	   overflow: hidden;
-	   white-space: nowrap;
-	position:absolute;
-	animation-delay: 2000ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
+	text-align: center;
+	
+	
+	padding-top: 30px;
+	color:black;
+	font-size:2vw;
+	
 }
+
 
 .slick-active .mega{
-	width: 350px;
-	margin: 0 auto;
-	padding-top: 30px;
-	position:relative;
-	padding-left: 90px;
+	text-align: center;
+	color:black;
+	padding-bottom: 20px;
+	font-size:2vw;	
+}
 
-	
-}
-.slick-active .mega_span{
-	color:black;
-	font-size:24px;
-	min-height:80px;
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 2500ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
-}
 .slick-active .extra{
-	width: 400px;
+	
+	
 	margin: 0 auto;
-	padding-top: 30px;
-	position:relative;
-	padding-left: 70px;
-}
-.slick-active .extra_span{
+	text-align: center;
+
 	color:black;
-	font-size:24px;
-	min-height:50px;
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 3000ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
+	font-weight:400;
+	font-size:2vw;
+
+   
 }
+
 .slick-active .li{
 	position:relative;
 	padding-top: 120px;
@@ -234,154 +191,87 @@ img, svg{
  .slick-active .kurs{
 	font-size: 32px;
 	width: 500px;
-	
-	position:relative;
-}
-.slick-active .kurs_span{
-	min-height:80px;
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 3500ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
 
 }
+
 
 .slick-active .kurs2{
 	padding-top: 30px;
 	font-size: 32px;
 	width: 500px;
-	position:relative;
+	
 }
 
-.slick-active .kurs2_span{
-	
-	min-height:80px;
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 4000ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
-    animation-name: nabor-teksta;
-}
+
 
 .slick-active .kurs3{
 	padding-top: 30px;
 	font-size: 32px;
-	width: 500px;
-	
-	position:relative;
+	width: 500px;	
 }
-.slick-active .kurs3_span{
-	min-height:80px;
-   overflow: hidden;
-   white-space: nowrap;
-	position:absolute;
-	animation-delay: 4500ms;
-    animation-duration: 1000ms;
-    animation-fill-mode: both;
- 
-    animation-name: nabor-teksta;
-}
+
 
 
 .slick-active .fantastic{
 	font-size: 2.8vw;
-	position:relative;
 	padding-bottom: 50px;
 	padding-top: 150px;
-	.col();
-	.size(12);
+	max-width: 1440px;
+	.size(13);
+	text-align: center;
+	color:white;
+
 
 	
 }
 
-.slick-active  .fantastic_span{
-		min-height:80px;	
-	   overflow: hidden;
-	   white-space: nowrap;
-		position:absolute;
-		animation-delay: 2000ms;
-		animation-duration: 1500ms;
-		animation-fill-mode: both;
-		padding-top: 30px;
-		animation-name: nabor-teksta
-}
+
 
 .slick-active .staggering{
 	font-size: 2.8vw;
-	
+	text-align: center;
+	color:white;
 	padding-bottom: 50px;
-	.col();
-	.size(12);
+.size(13);
 }
-.slick-active .staggering_span{
-	min-height:80px;	
-	   overflow: hidden;
-	   white-space: nowrap;
-	position:absolute;
-	animation-delay: 2500ms;
-    animation-duration: 1500ms;
-    animation-fill-mode: both;
-    padding-top: 30px;
-    animation-name: nabor-teksta;
 
-}
 
 .slick-active .bright{
 	position:relative;
+	text-align: center;
 	padding-bottom: 50px;
 	font-size: 2.8vw;
-	.col();
-	.size(12);
-
-}
-.slick-active .bright_span{
-	min-height:80px;	
-	   overflow: hidden;
-	   white-space: nowrap;
-	position:absolute;
-	animation-delay: 3000ms;
-    animation-duration: 1500ms;
-    animation-fill-mode: both;
-    padding-top: 30px;
-    animation-name: nabor-teksta
-
-}
-
-
-
-.slick-active .game__kurs{
-	padding-top: 240px;
-	
 	color:white;
-	
+	.size(13);
+	padding-bottom: 150px;
 
 }
+
+
+
+
+
  .slick-active .game{
 	font-size:5.8vw;
 	animation-delay: 1s;
+	color:white;
+	position:relative;
 }
- .slick-active .game_span{
- 	text-align: center;
-
+.slick-active .game:after{
+	content: 'для детей и родителей';
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	top: 30px;
+	font-size: 30px;
 
 }
+ 
 .slick-active .gameKurs{
-
+	text-align: right;
+	margin-top: 30px;
+	font-size:42px;
 }  
- .slick-active .gameKurs_span{
-
-}
-
-
-
-
-
-
 
 
 
@@ -396,6 +286,6 @@ img, svg{
 
 @keyframes nabor-teksta {
    0% { width: 0%;  }
-   100%{width:120%;}
+   100%{width:100%;}
 }
 
