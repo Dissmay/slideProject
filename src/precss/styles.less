@@ -1,0 +1,401 @@
+@import 'libs/smart-grid.less';
+@import 'libs/vars.less';
+@import 'libs/mixins.less';
+@import 'libs/slick.less';
+@import 'libs/slick-theme.less';
+@import 'libs/animate.css';
+@font-face {
+	font-family: "Font-Awesome";
+	src: url("../fonts/FontAwesome 2.otf") ;
+	font-style: normal;
+	font-weight:400;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #000;
+
+}
+
+/* Global classes */
+
+.wrapper{
+	.wrapper();
+}
+
+.row{
+	.row-flex();
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.clear{
+	clear: both;
+}
+
+.visually-hidden{
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin-top: -1px;
+	margin-left: -1px;
+	position: absolute;
+	clip: rect(0,0,0,0);
+	border: none;
+}
+
+img, svg{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/* Atomic classes */
+
+.d-n{
+	display: none;
+}
+
+.d-b{
+	display: block;
+}
+
+/* General */
+.slider{
+	height: 100vh;
+}
+
+.single-item-rtl{
+	
+	height: 100vh;
+	overflow:hidden;
+}
+.slider-for__img{
+	text-shadow: 2px 2px 3px #000;	
+	
+	height: 100vh;
+	overflow:hidden;	
+
+	&_1{
+		background-image: url(../img/1.jpg);
+		background-size: cover;	
+		background-position: center;
+	}
+	&_2{
+			background-image: url(../img/2.jpg);
+			background-size: cover;	
+	}
+	&_3{
+		background-image: url(../img/3.jpg);
+	}
+	&_4{
+		background-image: url(../img/4.jpg);
+	}
+	&_5{
+		background-image: url(../img/5.jpg);
+	}
+
+}
+.slick-active{
+	animation-fill-mode: forwards;
+	animation: slide 6s;
+
+}
+
+@keyframes slide {
+	0{
+
+		transform: scale(1)
+	}
+
+	100%{
+		transform: scale(1.05);
+	}
+	
+}
+.slick-active .h{
+	padding-top: 80px;
+	text-align: center;
+	font-size:150px;
+	color:white;
+	
+}
+.slick-active .p {
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 150px;
+	position:relative;
+
+	
+}
+.slick-active .p__span{
+
+	min-height:50px;
+	font-size: 30px;
+	color:white;
+	
+	
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 1000ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+}
+.slick-active .ultra{
+	width: 400px;
+	margin: 0  auto;
+	position:relative;
+	padding-top: 50px;
+	text-align: left;
+	padding-left: 50px;
+	
+}
+.slick-active .ultra_span{
+
+	color:black;
+	font-size:24px;
+	min-height:50px;
+	
+	   overflow: hidden;
+	   white-space: nowrap;
+	position:absolute;
+	animation-delay: 2000ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+}
+
+.slick-active .mega{
+	width: 350px;
+	margin: 0 auto;
+	padding-top: 30px;
+	position:relative;
+	padding-left: 90px;
+
+	
+}
+.slick-active .mega_span{
+	color:black;
+	font-size:24px;
+	min-height:80px;
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 2500ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+}
+.slick-active .extra{
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 30px;
+	position:relative;
+	padding-left: 70px;
+}
+.slick-active .extra_span{
+	color:black;
+	font-size:24px;
+	min-height:50px;
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 3000ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+}
+.slick-active .li{
+	position:relative;
+	padding-top: 120px;
+
+}
+
+ .slick-active .kurs{
+	font-size: 32px;
+	width: 500px;
+	
+	position:relative;
+}
+.slick-active .kurs_span{
+	min-height:80px;
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 3500ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+
+}
+
+.slick-active .kurs2{
+	padding-top: 30px;
+	font-size: 32px;
+	width: 500px;
+	position:relative;
+}
+
+.slick-active .kurs2_span{
+	
+	min-height:80px;
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 4000ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    animation-name: nabor-teksta;
+}
+
+.slick-active .kurs3{
+	padding-top: 30px;
+	font-size: 32px;
+	width: 500px;
+	
+	position:relative;
+}
+.slick-active .kurs3_span{
+	min-height:80px;
+   overflow: hidden;
+   white-space: nowrap;
+	position:absolute;
+	animation-delay: 4500ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+ 
+    animation-name: nabor-teksta;
+}
+
+
+.slick-active .fantastic{
+	font-size: 2.8vw;
+	position:relative;
+	padding-bottom: 50px;
+	padding-top: 150px;
+	.col();
+	.size(12);
+
+	
+}
+
+.slick-active  .fantastic_span{
+		min-height:80px;	
+	   overflow: hidden;
+	   white-space: nowrap;
+		position:absolute;
+		animation-delay: 2000ms;
+		animation-duration: 1500ms;
+		animation-fill-mode: both;
+		padding-top: 30px;
+		animation-name: nabor-teksta
+}
+
+.slick-active .staggering{
+	font-size: 2.8vw;
+	
+	padding-bottom: 50px;
+	.col();
+	.size(12);
+}
+.slick-active .staggering_span{
+	min-height:80px;	
+	   overflow: hidden;
+	   white-space: nowrap;
+	position:absolute;
+	animation-delay: 2500ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    padding-top: 30px;
+    animation-name: nabor-teksta;
+
+}
+
+.slick-active .bright{
+	position:relative;
+	padding-bottom: 50px;
+	font-size: 2.8vw;
+	.col();
+	.size(12);
+
+}
+.slick-active .bright_span{
+	min-height:80px;	
+	   overflow: hidden;
+	   white-space: nowrap;
+	position:absolute;
+	animation-delay: 3000ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    padding-top: 30px;
+    animation-name: nabor-teksta
+
+}
+
+
+
+.slick-active .game__kurs{
+	padding-top: 240px;
+	
+	color:white;
+	
+
+}
+ .slick-active .game{
+	font-size:5.8vw;
+	animation-delay: 1s;
+}
+ .slick-active .game_span{
+ 	text-align: center;
+
+
+}
+.slick-active .gameKurs{
+
+}  
+ .slick-active .gameKurs_span{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes nabor-teksta {
+   0% { width: 0%;  }
+   100%{width:120%;}
+}
+
